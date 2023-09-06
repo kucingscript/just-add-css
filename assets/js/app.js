@@ -1,16 +1,12 @@
 if (confirm("Are you sure you want to insert css file ?")) {
   document.getElementById("head").innerHTML =
     `<title>Just add css - Kucingscript</title> 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <meta
-      name="description"
-      content="Just add CSS - The difference between a website with and without css files"
-    />
-    <meta
-      name="keyword"
-      content="ar rasyid sarifullah, kucingscript, just add css"
-    />
+    <meta name="description" content="Just add CSS - The difference between a website with and without css files"/>
+    <meta name="keyword" content="ar rasyid sarifullah, kucingscript, just add css"/>
     <meta name="author" content="Ar Rasyid Sarifullah" />
+    <meta property="og:image" content="https://kucingscript.github.io/just-add-css/assets/images/avatar.webp"/>
+    <meta property="og:image:alt" content="Just add CSS - The difference between a website with and without css files"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -32,18 +28,14 @@ if (confirm("Are you sure you want to insert css file ?")) {
 } else {
   alert("Website looks bad, please reload the page and add css file");
   document.getElementById("head").innerHTML =
-    `<title>Just add css - Kucingscript</title> 
-    <meta
-      name="description"
-      content="Just add CSS - The difference between a website with and without css files"
-    />
-    <meta
-      name="keyword"
-      content="ar rasyid sarifullah, kucingscript, just add css"
-    />
-    <meta name="author" content="Ar Rasyid Sarifullah" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />`;
+  `<title>Just add css - Kucingscript</title> 
+  <meta name="description" content="Just add CSS - The difference between a website with and without css files"/>
+  <meta name="keyword" content="ar rasyid sarifullah, kucingscript, just add css"/>
+  <meta name="author" content="Ar Rasyid Sarifullah" />
+  <meta property="og:image" content="https://kucingscript.github.io/just-add-css/assets/images/avatar.webp"/>
+  <meta property="og:image:alt" content="Just add CSS - The difference between a website with and without css files"/>
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />`;
 }

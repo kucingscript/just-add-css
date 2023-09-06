@@ -348,7 +348,7 @@ footer i:hover {
 /* 1080 */
 
 /* 320px */
-@media (320px <= width <= 567px) {
+@media (width <= 567px) {
   :root {
     --text-sm: 1.6rem;
   }
