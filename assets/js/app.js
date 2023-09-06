@@ -15,10 +15,18 @@ if (confirm("Are you sure you want to insert css file ?")) {
   const menu_btn = document.querySelector(".menu-btn");
   const side_bar = document.querySelector(".side-bar");
   const close_btn = document.querySelector(".close-btn");
+  const items = document.querySelectorAll(".item");
 
   menu_btn.addEventListener("click", () => {
     side_bar.classList.add("active");
     menu_btn.style.visibility = "hidden";
+    
+    items.forEach((item) => {
+      item.addEventListener("click", () => {
+        side_bar.classList.remove("active");
+        menu_btn.style.visibility = "visible";
+      })
+    })
   });
 
   close_btn.addEventListener("click", () => {
